@@ -1,23 +1,13 @@
-.main-card {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 1rem;
-  border-radius: 0.5rem;
-  background: var(--shape-color);
-  margin-top: 5rem;
-  padding: 2rem 2rem;
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.014));
-}
-
-.aside-desktop-only {
-  display: none;
-}
-
 form {
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 35rem;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 4rem;
   background-color: var(--dark);
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.123));
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.02));
   border-radius: 0.5rem;
-  padding: 1.6rem 2rem;
 
   & fieldset {
     display: flex;
@@ -27,7 +17,11 @@ form {
 
     & legend {
       margin-bottom: 1rem;
-      font-size: 1.5rem;
+      font-size: 2rem;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 140%; /* 44.8px */
     }
   }
 
@@ -83,19 +77,6 @@ form {
   }
 }
 
-@media (width>=62.5rem) {
-  .aside-desktop-only {
-    display: initial;
-  }
-}
-
-@media (width<62.5rem) {
-  .main-card {
-    padding: 0.5rem;
-    grid-template-columns: 100%;
-  }
-}
-
 @media (width<45em) {
   .main-card {
     width: 100%;
@@ -107,5 +88,10 @@ form {
     background: var(--bg-color);
     padding: 0;
     width: 100%;
+    & fieldset {
+      & legend {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

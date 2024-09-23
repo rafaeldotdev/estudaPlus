@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registre sua conta</title>
+    <title>EstudaPlus</title>
     <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -24,7 +24,7 @@
           <div class="start-page-logo">
             <img src="./assets/logo.svg" alt="" srcset="" />
             <a href="index.html">
-            <h1>EstudaPlus</h1>
+              <h1>EstudaPlus</h1>
             </a>
           </div>
 
@@ -41,49 +41,36 @@
           </footer>
         </div>
       </aside>
-      <main class="container">
-        <form action="">
-          <fieldset>
-            <legend>Crie sua conta</legend>
-            <div class="input-wrapper">
-              <label for="nome">Seu nome</label>
-              <input type="text" name="nome" id="nome" placeholder="Seu nome" />
-            </div>
-
-            <div class="input-wrapper">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder="Seu e-mail"
-              />
-            </div>
-            <div class="input-wrapper">
-              <label for="email">Senha</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                required
-                placeholder="No mínimo 6 caracteres"
-              />
-            </div>
-            <div class="btn-wrapper">
-              <button>Criar conta</button>
-            </div>
-            <div class="content-wrapper">
-              <strong
-                >Já possui uma conta?
-                <a href="sigin.html">Clique aqui</a></strong
+      <main>
+        <div class="main-content">
+          <header>
+            <h1>Boas vindas!</h1>
+            <p>Faça seu login para acessar a plataforma.</p>
+          </header>
+          <div class="login-card">
+            <div class="login-item">
+              <a href="#"
+                ><i class="fa-brands fa-google"></i>Entrar com Google</a
               >
             </div>
-          </fieldset>
-        </form>
+            <div class="login-item">
+              <a href="home.html"
+                ><i class="fa-solid fa-user"></i>Entrar como Visitante</a
+              >
+            </div>
+
+            <div class="login-btn">
+              <a href="sigin.html"
+                ><i class="fa-solid fa-envelope"></i>Entrar com email</a
+              >
+            </div>
+
+            <span><a href="signup.html">Não tenho uma conta</a></span>
+          </div>
+        </div>
       </main>
     </div>
-     <script
+    <script
       src="https://kit.fontawesome.com/dfcff31ea1.js"
       crossorigin="anonymous"
     ></script>

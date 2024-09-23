@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EstudaPlus</title>
+    <title>Página Inicial</title>
     <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -17,56 +17,52 @@
     />
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
+
   <body>
-    <div id="home">
-      <aside class="home-desktop-only">
+    <div id="app">
+      <aside class="home-aside-desktop-only">
         <div class="home-aside">
-          <div class="home-logo">
-            <img src="./assets/logo.svg" alt="" srcset="" />
-            <h1>EstudaPlus</h1>
+          <div class="logo">
+            <a href="index.html">
+              <img src="./assets/logo.svg" alt="" srcset="" />
+              <h3>EstudaPlus</h3>
+            </a>
+          </div>
+
+          <div class="home-aside-list">
+            <ul role="list">
+              <li>
+                <a href="home.html"
+                  ><i class="fa-solid fa-chart-line"></i>Inicio</a
+                >
+              </li>
+              <li>
+                <a href="home.html"><i class="fa-solid fa-book"></i>Cursos</a>
+              </li>
+              <li>
+                <a href="home.html"
+                  ><i class="fa-solid fa-pen"></i>Área do Aluno</a
+                >
+              </li>
+              <li>
+                <a href="home.html"><i class="fa-solid fa-user"></i>Perfil</a>
+              </li>
+            </ul>
           </div>
 
           <footer>
-            <p>Siga-nos nas redes sociais</p>
             <div class="home-footer">
-              <div class="home-social">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-              </div>
+              <a href="sigin.html"
+                >Entrar<i class="fa-solid fa-right-to-bracket"></i
+              ></a>
             </div>
           </footer>
         </div>
       </aside>
-      <main>
-        <div class="main-content">
-          <header>
-            <h1>Boas vindas!</h1>
-            <p>Faça seu login para acessar a plataforma.</p>
-          </header>
-          <div class="login-card">
-            <div class="login-item">
-              <a href="#"
-                ><i class="fa-brands fa-google"></i>Entrar com Google</a
-              >
-            </div>
-            <div class="login-item">
-              <a href="#"
-                ><i class="fa-brands fa-facebook"></i>Entrar com Facebook</a
-              >
-            </div>
 
-            <div class="login-btn">
-              <a href="sigin.html"
-                ><i class="fa-solid fa-envelope"></i>Entrar com email</a
-              >
-            </div>
-
-            <span><a href="signup.html">Não tenho uma conta</a></span>
-          </div>
-        </div>
-      </main>
+      <header class="container header-content">
+        <nav class="ul-desktop-only"></nav>
+      </header>
     </div>
     <script
       src="https://kit.fontawesome.com/dfcff31ea1.js"

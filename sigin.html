@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | EstudaPlus</title>
-    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -18,73 +18,75 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <div id="app">
-      <header class="container header-content">
-        <div class="logo">
-          <img src="./assets/logo.svg" alt="" srcset="">
-          <h3>EstudaPlus</h3>
-        </div>
-        <nav class="ul-desktop-only">
-          <ul role="list">
-            <li><a href="home.html">Inicio</a></li>
-            <li><a href="#">Area do Educador</a></li>
-            <li><a href="#">Area do Aluno</a></li>
-          </ul>
-        </nav>
-      </header>
+    <div id="start-page">
+      <aside class="start-page-desktop-only">
+        <div class="start-page-aside">
+          <div class="start-page-logo">
+            <img src="./assets/logo.svg" alt="" srcset="" />
+            <a href="index.html">
+              <h1>EstudaPlus</h1>
+            </a>
+          </div>
 
-      <main class="container">
-        <div class="main-card">
-          <aside class="aside-desktop-only">
-            <div class="aside-layout">
-              <header>
-              <h1>Conecte-se com a maior rede de educadores!</h1>
-            </header>
-              <figure class="card">
-                <img src="./assets/images/img2.jpg" alt="" />
-              </figure>
+          <footer>
+            <p>Siga-nos nas redes sociais</p>
+            <div class="start-page-footer">
+              <div class="start-page-social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
             </div>
-          </aside>
-          <form action="">
-            <fieldset>
-              <legend>Acesse sua conta</legend>
-              <div class="input-wrapper">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  placeholder="Seu e-mail"
-                />
-              </div>
-              <div class="input-wrapper">
-                <label for="email">Senha</label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  required
-                  placeholder="Sua senha"
-                />
-              </div>
-              <div class="input-wrapper">
-                <div class="checkbox-wrapper">
-                  <div class="checkbox-img"></div>
-                  <input type="checkbox" name="r-account" id="r-account" />
-                  <label for="r-account">Mantenha-me conectado</label>
-                </div>
-              </div>
-              <div class="btn-wrapper">
-                <button>Entrar</button>
-              </div>
-              <div class="content-wrapper">
-                <strong>Não possui conta? <a href="signup.html">Clique aqui</a></strong>
-              </div>
-            </fieldset>
-          </form>
+          </footer>
         </div>
+      </aside>
+      <main class="container">
+        <form action="">
+          <fieldset>
+            <legend>Acesse sua conta</legend>
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Seu e-mail"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="email">Senha</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Sua senha"
+              />
+            </div>
+            <div class="input-wrapper">
+              <div class="checkbox-wrapper">
+                <div class="checkbox-img"></div>
+                <input type="checkbox" name="r-account" id="r-account" />
+                <label for="r-account">Mantenha-me conectado</label>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <button>Entrar</button>
+            </div>
+            <div class="content-wrapper">
+              <strong
+                >Não possui conta? <a href="signup.html">Clique aqui</a></strong
+              >
+            </div>
+          </fieldset>
+        </form>
       </main>
     </div>
+    <script
+      src="https://kit.fontawesome.com/dfcff31ea1.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
