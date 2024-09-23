@@ -29,9 +29,3 @@
     }
   }
 }
-
-@media(width<=23rem){
-  :root{
-    zoom: 90%;
-  }
-}

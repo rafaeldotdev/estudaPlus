@@ -98,6 +98,14 @@ form {
 
 @media (width<45em) {
   .main-card {
+    width: 100%;
+    gap: 0;
     padding: 0rem;
+  }
+
+  form {
+    background: var(--bg-color);
+    padding: 0;
+    width: 100%;
   }
 }
