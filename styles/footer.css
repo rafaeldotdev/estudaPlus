@@ -5,9 +5,17 @@
 
   & strong {
     border-left: 2px solid var(--blue);
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     font-size: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+  }
+}
+
+@media (width<=44rem) {
+  .main-footer {
+    width: 100%;
+    left: 0;
+    text-align: center;
   }
 }
