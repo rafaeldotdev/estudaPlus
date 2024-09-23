@@ -5,8 +5,8 @@ form {
   width: 100%;
   border-radius: 1rem;
   padding: 4rem;
-  background-color: var(--dark);
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.02));
+  background-color: var(--bg-color);
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.05));
   border-radius: 0.5rem;
 
   & fieldset {
@@ -77,17 +77,17 @@ form {
   }
 }
 
-@media (width<45em) {
-  .main-card {
-    width: 100%;
-    gap: 0;
-    padding: 0rem;
-  }
-
+@media (width<=62.5rem) {
   form {
-    background: var(--bg-color);
+    background-color: var(--bg-color);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0));
     padding: 0;
     width: 100%;
+  }
+}
+
+@media (width<=43rem) {
+  form {
     & fieldset {
       & legend {
         font-size: 1.5rem;

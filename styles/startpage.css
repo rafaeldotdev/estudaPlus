@@ -56,6 +56,7 @@
         border-radius: 1rem;
 
         & .start-page-social {
+          
           cursor: pointer;
           display: flex;
           gap: 1rem;
