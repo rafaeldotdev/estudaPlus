@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registre sua conta</title>
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="container header-content">
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="" srcset="" />
+          <h3>EstudaPlus</h3>
+        </div>
+        <nav class="ul-desktop-only">
+          <ul role="list">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="#">Area do Educador</a></li>
+            <li><a href="#">Area do Aluno</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container">
+        <div class="main-card">
+          <aside class="aside-desktop-only">
+            <div class="aside-layout">
+              <header>
+                <h1>Junte-se a EstudaPlus</h1>
+              </header>
+              <figure class="card">
+                <img src="./assets/images/registerimg.jpg" alt="" />
+              </figure>
+            </div>
+          </aside>
+          <form action="">
+            <fieldset>
+              <legend>Crie sua conta</legend>
+              <div class="input-wrapper">
+                <label for="nome">Seu nome</label>
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  placeholder="Seu nome"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Seu e-mail"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="email">Senha</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  placeholder="No mínimo 6 caracteres"
+                />
+              </div>
+              <div class="btn-wrapper">
+                <button>Criar conta</button>
+              </div>
+              <div class="content-wrapper">
+                <strong
+                  >Já possui uma conta?
+                  <a href="sigin.html">Clique aqui</a></strong
+                >
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

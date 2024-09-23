@@ -1,0 +1,103 @@
+.main-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--shape-color);
+  margin-top: 5rem;
+  padding: 2rem 2rem;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.014));
+}
+
+.aside-desktop-only {
+  display: none;
+}
+
+form {
+  background-color: var(--dark);
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.123));
+  border-radius: 0.5rem;
+  padding: 1.6rem 2rem;
+
+  & fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 0;
+
+    & legend {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  & input {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 1.25rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #171b2749;
+    border: 0;
+
+    color: white;
+    font-weight: 500;
+    font-size: 1.125rem;
+
+    &::placeholder {
+      color: rgb(255, 255, 255);
+      opacity: 0.5;
+    }
+    &:hover,
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  & button {
+    cursor: pointer;
+    background-color: var(--blue);
+    width: 100%;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--blue);
+
+    color: #f9f9f9;
+    font-size: 1rem;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #589fdd;
+    }
+  }
+}
+
+.content-wrapper {
+  padding: 0.25rem;
+
+  & a {
+    color: var(--blue);
+
+    &:hover {
+      color: #6bb3f1;
+    }
+  }
+}
+
+@media (width>=62.5rem) {
+  .aside-desktop-only {
+    display: initial;
+  }
+}
+
+@media (width<62.5rem) {
+  .main-card {
+    padding: 0.5rem;
+    grid-template-columns: 100%;
+  }
+}
+
+@media (width<45em) {
+  .main-card {
+    padding: 0rem;
+  }
+}

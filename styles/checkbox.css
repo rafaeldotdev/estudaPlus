@@ -1,0 +1,27 @@
+.checkbox-wrapper {
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+
+  & input,
+  & input:hover,
+  & input:focus {
+    all: unset;
+    inset: 0;
+    position: absolute;
+  }
+
+  & .checkbox-img {
+    background-image: url(../assets/icons/checkbox-default.svg);
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  &:has(:checked){
+    .checkbox-img{
+      background-image: url(../assets/icons/checkbox-checked.svg);
+    }
+  }
+
+}
