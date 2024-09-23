@@ -1,24 +1,27 @@
 #home {
   display: grid;
   grid-template-columns: 40% 60%;
+  height: 100vh;
   overflow: hidden;
 
-  & aside{
-    height: 100vh;
-    overflow: hidden;
+  & .home-desktop-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
   }
 
   & .home-aside {
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.204));
-    padding: 2rem;
-    margin: 2rem;
-    background: var(--shape-color);
-    border-radius: 0.5rem;
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 50%;
-    position: relative;
-    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.204));
+    background: var(--shape-color);
+    border-radius: 0.5rem;
 
     &::before {
       content: "";
@@ -38,9 +41,12 @@
     }
 
     & footer {
+      position: absolute;
+      bottom: 1rem;
       text-align: center;
       padding: 0.5rem;
-
+      width: 100%;
+      
       & .home-footer {
         margin: 0 auto;
         margin-top: 0.5rem;
@@ -64,15 +70,17 @@
   }
 
   & main {
-    margin: 2rem;
-    border-radius: 0.5rem;
     display: flex;
-    max-width: 30rem;
-    margin: 0 auto;
-    max-height: 40rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     & .main-content {
       margin-top: 13rem;
+      margin: 2rem;
+      border-radius: 0.5rem;
+      max-width: 30rem;
+      margin: 0 auto;
 
       & a,
       & i {
@@ -164,28 +172,11 @@
   }
 }
 
-.home-desktop-only {
-  display: inherit;
-}
-
-@media (width<=65rem) {
-  #home {
-    grid-template-columns: 50% 50%;
-    & .home-aside{
-      height: 100vh;
-    }
-  }
-}
-
-@media (width<=50rem) {
-  #home {
-    grid-template-columns: 45% 55%;
-  }
-}
-
 @media (width<=44rem) {
-  .home-desktop-only {
-    display: none;
+  #home {
+    & .home-desktop-only {
+      display: none;
+    }
   }
 
   #home {

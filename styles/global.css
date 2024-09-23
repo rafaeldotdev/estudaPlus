@@ -44,3 +44,7 @@ img{
 .desktop-only {
   display: none;
 }
+
+.end{
+  align-items: end;
+}
