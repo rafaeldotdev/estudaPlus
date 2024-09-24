@@ -1,5 +1,4 @@
 header {
-  padding-block: 1.6rem;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -7,11 +6,10 @@ header {
 
   & ul[role="list"] {
     display: flex;
-    gap: 1.5rem;
-    list-style: none;
+    gap: 1rem;
 
-    & li:hover {
-      transition: all 250ms;
+    & li {
+      list-style: none;
     }
   }
 }
@@ -31,16 +29,26 @@ header {
   }
 }
 
-
-.ul-desktop-only {
+.header-mobile-only {
   display: none;
 }
 
-@media (width>=40em) {
-  .ul-desktop-only {
+@media (width<=68.75em) {
+  .header-mobile-only {
     display: initial;
-  }
-}
 
-@media (width>=80em) {
+    & ul {
+      align-items: center;
+      & li:nth-child(3) {
+        background-color: var(--blue);
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid var(--blue);
+      }
+    }
+
+    & i {
+      margin-left: 0.5rem;
+    }
+  }
 }
