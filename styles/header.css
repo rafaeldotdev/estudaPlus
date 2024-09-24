@@ -29,6 +29,24 @@ header {
   }
 }
 
+.sigin-header {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+
+  & a {
+    display: inline-flex;
+    font-size: 1rem;
+  }
+}
+
+.logo-mobile-only{
+  display: none;
+}
+
 .header-mobile-only {
   display: none;
 }
@@ -51,4 +69,10 @@ header {
       margin-left: 0.5rem;
     }
   }
+}
+
+@media(width<=44rem){
+  .logo-mobile-only{
+  display: initial;
+}
 }
